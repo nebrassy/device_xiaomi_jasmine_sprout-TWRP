@@ -22,6 +22,10 @@
 #
 #TWRP
 BUILD_TWRP := true
+
+#AOSP SU
+WITH_SU := false
+
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
