@@ -46,5 +46,5 @@ TW_INCLUDE_CRYPTO := false
 AB_OTA_UPDATER := true
 TW_USE_TOOLBOX := true
 TW_INCLUDE_REPACKTOOLS := true
-TW_HAS_EDL_MODE := true
+#TW_HAS_EDL_MODE := true
 endif
