@@ -21,11 +21,11 @@
 # definition file).
 #
 
-# inherit MI A2 HAVOC device config
+# inherit MI A2 omni device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_jasmine_sprout.mk
+    $(LOCAL_DIR)/omni_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_jasmine_sprout-eng \
-    havoc_jasmine_sprout-userdebug \
-		havoc_jasmine_sprout-eng
+    omni_jasmine_sprout-eng \
+    omni_jasmine_sprout-userdebug \
+		omni_jasmine_sprout-user
