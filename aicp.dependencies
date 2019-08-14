@@ -1,0 +1,17 @@
+[
+  {
+    "repository":  "AICP/device_xiaomi_sdm660-common",
+    "target_path": "device/xiaomi/sdm660-common",
+    "branch":      "p9.0"
+  },
+  {
+    "repository":  "TeamWin/external_magisk-prebuilt",
+    "target_path": "external/magisk-prebuilt",
+    "branch":      "master"
+  },
+  {
+    "repository":  "AICP/bootable_recovery",
+    "target_path": "bootable/recovery",
+    "branch":      "p9.0"
+  }
+]

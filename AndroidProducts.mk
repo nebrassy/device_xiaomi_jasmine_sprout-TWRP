@@ -21,11 +21,11 @@
 # definition file).
 #
 
-# inherit MI A2 omni device config
+# inherit MI A2 AICP device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_jasmine_sprout.mk
+    $(LOCAL_DIR)/aicp_jasmine_sprout.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_jasmine_sprout-eng \
-    omni_jasmine_sprout-userdebug \
-		omni_jasmine_sprout-user
+    aicp_jasmine_sprout-eng \
+    aicp_jasmine_sprout-userdebug \
+    aicp_jasmine_sprout-user
