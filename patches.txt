@@ -2,3 +2,12 @@
 # so we pull the patches from gerrit.
 #
 #e.g. 67313/1 http://gerrit.aicp-rom.com prebuilts/clang/host/linux-x86
+
+#Longshot
+93377/1 http://gerrit.aicp-rom.com device/aicp/sepolicy
+93378/1 http://gerrit.aicp-rom.com vendor/aicp
+93385/1 http://gerrit.aicp-rom.com vendor/aicp
+93383/1 http://gerrit.aicp-rom.com frameworks/base
+
+#update_engine
+88265/5 http://gerrit.aicp-rom.com device/aicp/sepolicy
