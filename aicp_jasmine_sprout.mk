@@ -29,13 +29,6 @@ WITH_SU := false
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-
-# Get the prebuilt list of APNs
-#$(call inherit-product, vendor/aicp/config/gsm.mk)
-
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
