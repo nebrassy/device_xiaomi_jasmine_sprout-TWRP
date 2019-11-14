@@ -36,6 +36,7 @@ on fs
     chmod 0664 /dev/ion
     chown system system /dev/ion
     install_keyring
+    export ANDROID_ROOT /system_root
 
 service boot-1-0 /sbin/android.hardware.boot@1.0-service
     user root
