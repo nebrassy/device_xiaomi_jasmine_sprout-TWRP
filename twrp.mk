@@ -38,6 +38,7 @@ TW_INCLUDE_FUSE_NTFS := true
 # Crypto
 TW_INCLUDE_CRYPTO := false
 
+TW_EXCLUDE_TWRPAPP := true
 
 # A/B partition device flags
 #TARGET_NO_KERNEL := false
