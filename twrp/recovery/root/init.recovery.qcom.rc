@@ -36,15 +36,21 @@ on fs
     chmod 0664 /dev/ion
     chown system system /dev/ion
     install_keyring
-    export ANDROID_ROOT /system_root
 
-service boot-1-0 /sbin/android.hardware.boot@1.0-service
+service hwservicemanager /system/bin/hwservicemanager
+    user root
+    group root
+    disabled
+    onrestart setprop hwservicemanager.ready false
+    seclabel u:r:recovery:s0
+
+service logd /sbin/logd
     user root
     group root
     disabled
     seclabel u:r:recovery:s0
 
-service keymaster-3-0 /sbin/android.hardware.keymaster@3.0-service-qti
+service boot-1-0 /system/bin/android.hardware.boot@1.0-service
     user root
     group root
     disabled
@@ -57,6 +63,8 @@ service recovery /sbin/recovery
     seclabel u:r:recovery:s0
 
 on init
+    start hwservicemanager
+    start logd
     start boot-1-0
 
 on property:crypto.ready=0
@@ -66,8 +74,6 @@ on property:crypto.ready=0
     stop servicemanager
 
 on property:vendor.sys.listeners.registered=true
-    start keymaster-3-0
-
     mkdir /config
     mount configfs none /config
     mkdir /config/usb_gadget/g1 0770 shell shell
