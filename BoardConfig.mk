@@ -49,8 +49,5 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Platform
 BOARD_VENDOR_PLATFORM := xiaomi-sdm660
 
-# Vendor Security patch level
-VENDOR_SECURITY_PATCH := 2020-04-05
-
 # WLAN MAC
 WLAN_MAC_SYMLINK := true
