@@ -1,9 +1,6 @@
 on early-fs
     start vold
 
-on fs
-    install_keyring
-
 on property:vendor.sys.listeners.registered=true
     start gatekeeper-1-0
     start gatekeeper-1-0-qti

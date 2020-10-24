@@ -8,6 +8,7 @@ on fs
     chown system system /dev/ion
 
 on property:ro.crypto.state=encrypted
+    install_keyring
     start prepdecrypt
 
 on property:crypto.ready=1 && property:hwservicemanager.ready=true
