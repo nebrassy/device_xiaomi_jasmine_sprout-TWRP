@@ -41,7 +41,7 @@ TW_USE_TOOLBOX := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_RESETPROP := true
 
-TARGET_RECOVERY_DEVICE_MODULES += android.hardware.boot@1.0 bootctrl.sdm660 android.hardware.boot@1.0-impl android.hardware.boot@1.0-service libicuuc libxml2 libion libhardware_legacy android.system.suspend@1.0 libandroidicu libicui18n libashmemd_client ashmemd_aidl_interface-cpp vendor.display.config@1.0 device_manifest.xml system_manifest.xml
+TARGET_RECOVERY_DEVICE_MODULES += android.hardware.boot@1.0 bootctrl.sdm660 android.hardware.boot@1.0-impl libicuuc libxml2 libion libhardware_legacy android.system.suspend@1.0 libandroidicu libicui18n libashmemd_client ashmemd_aidl_interface-cpp vendor.display.config@1.0 device_manifest.xml system_manifest.xml
 
 TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/twrp/recovery/root/system/etc/recovery.wipe
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/twrp/recovery/root/system/etc/recovery.fstab
@@ -61,7 +61,6 @@ PRODUCT_COPY_FILES += \
     $(OUT_DIR)/target/product/jasmine_sprout/system/lib64/libicui18n.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libicui18n.so \
     $(OUT_DIR)/target/product/jasmine_sprout/system/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/vintf/manifest.xml \
     $(OUT_DIR)/target/product/jasmine_sprout/system/lib64/libxml2.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libxml2.so \
-    $(OUT_DIR)/target/product/jasmine_sprout/vendor/bin/hw/android.hardware.boot@1.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.boot@1.0-service \
     $(OUT_DIR)/target/product/jasmine_sprout/vendor/lib64/libicuuc.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libicuuc.so \
     $(OUT_DIR)/target/product/jasmine_sprout/vendor/lib64/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/vendor.display.config@1.0.so \
     $(OUT_DIR)/target/product/jasmine_sprout/vendor/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/etc/vintf/manifest.xml \
