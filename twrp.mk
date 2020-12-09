@@ -29,7 +29,11 @@ TW_INCLUDE_FUSE_NTFS := true
 # Crypto
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
+BOARD_USES_QCOM_FBE_DECRYPTION := true
 
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
 
 # Security Patch Hack to prevent Anti Rollback
 PLATFORM_VERSION := 16.1.0
