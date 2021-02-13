@@ -33,7 +33,11 @@ BOARD_USES_QCOM_FBE_DECRYPTION := true
 
 PRODUCT_PACKAGES += \
     qcom_decrypt \
-    qcom_decrypt_fbe
+    qcom_decrypt_fbe \
+    tzdata_twrp
+
+PRODUCT_PACKAGES += \
+    nano
 
 # Security Patch Hack to prevent Anti Rollback
 PLATFORM_VERSION := 16.1.0
@@ -54,6 +58,8 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
 TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
+
+TW_DEVICE_VERSION := Nebrassy
 
 PRODUCT_COPY_FILES += \
     $(OUT_DIR)/target/product/jasmine_sprout/system/lib64/android.system.suspend@1.0.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/android.system.suspend@1.0.so \
