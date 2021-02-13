@@ -2,7 +2,6 @@
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)/twrp
 
 ALLOW_MISSING_DEPENDENCIES := true
 
@@ -51,8 +50,8 @@ TW_INCLUDE_RESETPROP := true
 
 TARGET_RECOVERY_DEVICE_MODULES += android.hardware.boot@1.0 bootctrl.sdm660 android.hardware.boot@1.0-impl libicuuc libxml2 libion libhardware_legacy android.system.suspend@1.0 libandroidicu libicui18n libashmemd_client ashmemd_aidl_interface-cpp vendor.display.config@1.0 device_manifest.xml system_manifest.xml
 
-TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/twrp/recovery/root/system/etc/recovery.wipe
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/twrp/recovery/root/system/etc/recovery.fstab
+TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery/root/system/etc/recovery.wipe
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
